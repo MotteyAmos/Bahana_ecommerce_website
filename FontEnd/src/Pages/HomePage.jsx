@@ -1,6 +1,6 @@
 
 import { HomeMain, TopSales, Features, PopularSales} from "../components"
-import { popularsales, handBag, toprateslaes } from "../../data/data"
+import { popularsales, handBag, topratesales} from "../../data/data"
 
 const HomePage = () => {
 
@@ -9,7 +9,7 @@ const HomePage = () => {
         <HomeMain/>
         <TopSales value={popularsales}/>
        <Features value={handBag} isHandBag/>
-       <TopSales values={toprateslaes}/>
+       <TopSales value={topratesales} />
     </div>
   )
 }

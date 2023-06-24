@@ -68,7 +68,7 @@ export const popularsales = {
   };
 
 
-  export const toprateslaes = {
+  export const topratesales = {
     title: "Top Rated Sales",
     items: [
       {
@@ -81,6 +81,7 @@ export const popularsales = {
         price: "",
         color: "",
         shadow: "",
+        product_url:"",
       },
       {
         id: "0M0x2",
@@ -92,6 +93,7 @@ export const popularsales = {
         price: "",
         color: "",
         shadow: "",
+        product_url:"",
       },
       {
         id: "0M0x3",
@@ -103,6 +105,7 @@ export const popularsales = {
         price: "",
         color: "",
         shadow: "",
+        product_url:"",
       },
       {
         id: "0M0x4",
@@ -114,6 +117,7 @@ export const popularsales = {
         price: "",
         color: "",
         shadow: "",
+        product_url:"",
       },
       {
         id: "0M0x5",
@@ -125,6 +129,7 @@ export const popularsales = {
         price: "",
         color: "",
         shadow: "",
+        product_url:"",
       },
       {
         id: "0M0x6",
@@ -136,6 +141,7 @@ export const popularsales = {
         price: "",
         color: "",
         shadow: "",
+        product_url:"",
       },
       {
         id: "0M0x7",
@@ -147,6 +153,7 @@ export const popularsales = {
         price: "",
         color: "",
         shadow: "",
+        product_url:"",
       },
       {
         id: "0M0x8",
@@ -158,6 +165,7 @@ export const popularsales = {
         price: "",
         color: "",
         shadow: "",
+        product_url:"",
       },
       {
         id: "0M0x9",
@@ -169,6 +177,7 @@ export const popularsales = {
         price: "",
         color: "",
         shadow: "",
+        product_url:"",
       },
       
     ],
