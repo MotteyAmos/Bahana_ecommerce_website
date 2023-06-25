@@ -1,6 +1,7 @@
 
-import { HomeMain, TopSales, Features, PopularSales} from "../components"
-import { popularsales, handBag, topratesales} from "../../data/data"
+import { HomeMain, TopSales, Features, PopularSales, Footer} from "../components"
+import { popularsales, handBag, topratesales,cuff_link,  homeShowCase} from "../../data/data"
+import VideoClip from "../components/videoClip"
 
 const HomePage = () => {
 
@@ -9,7 +10,10 @@ const HomePage = () => {
         <HomeMain/>
         <TopSales value={popularsales}/>
        <Features value={handBag} isHandBag/>
-       <TopSales value={topratesales} />
+       <TopSales value={topratesales} isTopSale/>
+       <Features value={cuff_link} />
+       
+       <Footer/>
     </div>
   )
 }

@@ -34,7 +34,7 @@ export {default as clothe_28} from "./clothes/clothe_28.jpeg";
 //
 //clothe showcase
 
-export {default as ladies_bag_1} from "./bags/ladies_bag_1.jpg";
+export {default as ladies_bag_1} from "./bags/ladies_bag_1.png";
 export {default as ladies_bag_2} from "./bags/ladies_bag_2.jpg";
 export {default as ladies_bag_3} from "./bags/ladies_bag_3.jpg";
 export {default as ladies_bag_4} from "./bags/ladies_bag_4.jpg";
@@ -94,7 +94,13 @@ export {default as cuff_link_24} from "./Cuff_link/Cuff_link_24.jpg";
 export {default as cuff_link_25} from "./Cuff_link/Cuff_link_25.jpg";
 export {default as cuff_link_26} from "./Cuff_link/Cuff_link_26.jpg";
 
+
 //cuff link show case goes here
+
+
+
+
+export {default as fabricShowCase } from "./video/homeFashionShowCase.mp4";
 
 
 

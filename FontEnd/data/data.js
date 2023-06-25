@@ -12,12 +12,19 @@ import { cuff_link_1, cuff_link_2, cuff_link_3,cuff_link_4, cuff_link_5,cuff_lin
     cuff_link_19, cuff_link_20, cuff_link_21, cuff_link_22, cuff_link_23, cuff_link_24, cuff_link_25, cuff_link_26
 } from "../public/images"
 
+import { fabricShowCase } from "../public/images";
+
+
+export const homeShowCase = {
+  video: fabricShowCase,
+}
 
 export const popularsales = {
     title: "Popular Sales",
     items: [
       {
         id: "0p0x1",
+        type:"",
         title: "Our Fabric",
         text: "Versatile Fabrics For Occasions",
         rating: "5+",
@@ -30,6 +37,7 @@ export const popularsales = {
       },
       {
         id: "0p0x2",
+        type:"",
         title: "Bags",
         text: "Grab Your Choice",
         rating: "4+",
@@ -42,6 +50,7 @@ export const popularsales = {
       },
       {
         id: "0p0x3",
+        type:"",
         title: "Cuff Link",
         text: "An Aceent To Your Class",
         rating: "3+",
@@ -67,12 +76,24 @@ export const popularsales = {
     img:ladies_bag_1 ,
   };
 
+  
+  export  const cuff_link = {
+    heading: "Cuff Link",
+    title: "An Accent of Your Class",
+    text: "Our Purpose is to move the world forward. We take action by building community, protecting our planet and increasing access to sport.",
+    btn: "Explore More",
+    url: "/all_cuff_link",
+    img:cuff_link_8 ,
+  };
+
 
   export const topratesales = {
     title: "Top Rated Sales",
+    
     items: [
       {
         id: "0M0x1",
+        type: "topSale",
         title: "",
         text: "",
         rating: "",
@@ -85,6 +106,7 @@ export const popularsales = {
       },
       {
         id: "0M0x2",
+        type: "topSale",
         title: "",
         text: "",
         rating: "",
@@ -97,6 +119,7 @@ export const popularsales = {
       },
       {
         id: "0M0x3",
+        type: "topSale",
         title: "",
         text: "",
         rating: "",
@@ -109,6 +132,7 @@ export const popularsales = {
       },
       {
         id: "0M0x4",
+        type: "topSale",
         title: "",
         text: "",
         rating: "",
@@ -121,6 +145,7 @@ export const popularsales = {
       },
       {
         id: "0M0x5",
+        type: "topSale",
         title: "",
         text: "",
         rating: "",
@@ -133,6 +158,7 @@ export const popularsales = {
       },
       {
         id: "0M0x6",
+        type: "topSale",
         title: "",
         text: "",
         rating: "",
@@ -145,6 +171,7 @@ export const popularsales = {
       },
       {
         id: "0M0x7",
+        type: "topSale",
         title: "",
         text: "",
         rating: "",
@@ -157,6 +184,7 @@ export const popularsales = {
       },
       {
         id: "0M0x8",
+        type: "topSale",
         title: "",
         text: "",
         rating: "",
@@ -169,6 +197,7 @@ export const popularsales = {
       },
       {
         id: "0M0x9",
+        type: "topSale",
         title: "",
         text: "",
         rating: "",
