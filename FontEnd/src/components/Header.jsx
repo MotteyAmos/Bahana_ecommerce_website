@@ -37,7 +37,7 @@ const Header = () => {
           Products
           <ul className=" hidden absolute  gap-5 mt-1   py-1 px-5 border-none drop-shadow-xl">
             <li>
-              <NavLink to="/fabrics">Fabrics</NavLink>
+              <NavLink to="/all_fabrics">Fabrics</NavLink>
             </li>
             <li>
               <NavLink to="/bags">bags</NavLink>

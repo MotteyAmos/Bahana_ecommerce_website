@@ -6,4 +6,6 @@ export {default as TopSales} from "./TopSales";
 export {default as Title} from "./Title";
 export {default as Features} from "./Features";
 export {default as PopularSales} from "./PopularSales";
-
+export {default as Banner} from "./Banner";
+export {default as MainProduct} from "./MainProduct";
+export {default as FabricCard} from "./FabricCard";

@@ -12,7 +12,7 @@ const Footer = () => {
           <div className="">
             <p className="text-[#dc2626] font-bold text-4xl textFont tracking-wide">BART-HANNAH</p>
             <p className="tracking-[0.1rem] font-thin text-2xl">Enterprice</p>
-            <img src={logo} alt="logo-footer" className="h-[5rem]" />
+            <img src={logo} alt="logo-footer" className="h-[9rem]" />
           </div>
 
           <div className="flex gap-[10rem]">

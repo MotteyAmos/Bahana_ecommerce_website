@@ -12,6 +12,8 @@ import { cuff_link_1, cuff_link_2, cuff_link_3,cuff_link_4, cuff_link_5,cuff_lin
     cuff_link_19, cuff_link_20, cuff_link_21, cuff_link_22, cuff_link_23, cuff_link_24, cuff_link_25, cuff_link_26
 } from "../public/images"
 
+
+
 import { fabricShowCase } from "../public/images";
 
 
@@ -213,7 +215,156 @@ export const popularsales = {
   };
 
 
-
+export const allFabric = {
+  title: "title",
+  items:[
+    {
+      rating: "",
+      img: clothe_1,
+      product_url:"",
+    },
+    {
+      rating: "",
+      img: clothe_2,
+      product_url:"",
+    },
+    {
+      rating: "",
+      img: clothe_3,
+      product_url:"",
+    },
+    {
+      rating: "",
+      img: clothe_4,
+      product_url:"",
+    },
+    {
+      rating: "",
+      img: clothe_5,
+      product_url:"",
+    },
+    {
+      rating: "",
+      img: clothe_6,
+      product_url:"",
+    },
+    {
+      rating: "",
+      img: clothe_7,
+      product_url:"",
+    },
+    {
+      rating: "",
+      img: clothe_8,
+      product_url:"",
+    },
+    {
+      rating: "",
+      img: clothe_9,
+      product_url:"",
+    },
+    {
+      rating: "",
+      img: clothe_10,
+      product_url:"",
+    },
+    {
+      rating: "",
+      img: clothe_11,
+      product_url:"",
+    },
+    {
+      rating: "",
+      img: clothe_12,
+      product_url:"",
+    },
+    {
+      rating: "",
+      img: clothe_1,
+      product_url:"",
+    },
+    {
+      rating: "",
+      img: clothe_13,
+      product_url:"",
+    },
+    {
+      rating: "",
+      img: clothe_14,
+      product_url:"",
+    },
+    {
+      rating: "",
+      img: clothe_15,
+      product_url:"",
+    },
+    {
+      rating: "",
+      img: clothe_16,
+      product_url:"",
+    },
+    {
+      rating: "",
+      img: clothe_17,
+      product_url:"",
+    },
+    {
+      rating: "",
+      img: clothe_18,
+      product_url:"",
+    },
+    {
+      rating: "",
+      img: clothe_19,
+      product_url:"",
+    },
+    {
+      rating: "",
+      img: clothe_20,
+      product_url:"",
+    },
+    {
+      rating: "",
+      img: clothe_21,
+      product_url:"",
+    },
+    {
+      rating: "",
+      img: clothe_22,
+      product_url:"",
+    },
+    {
+      rating: "",
+      img: clothe_23,
+      product_url:"",
+    },
+    {
+      rating: "",
+      img: clothe_24,
+      product_url:"",
+    },
+    {
+      rating: "",
+      img: clothe_25,
+      product_url:"",
+    },
+    {
+      rating: "",
+      img: clothe_26,
+      product_url:"",
+    },
+    {
+      rating: "",
+      img: clothe_27,
+      product_url:"",
+    },
+    {
+      rating: "",
+      img: clothe_28,
+      product_url:"",
+    }
+  ]
+}
 
 
 
