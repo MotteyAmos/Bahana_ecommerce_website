@@ -1,11 +1,12 @@
 import { Banner, MainProduct } from "../components"
-import { allFabric } from "../../data/data"
+import { allFabric, clothe_showCase } from "../../data/data"
+
 
 const AllFabric = ({fabric_val}) => {
   return (
     <div>
         <Banner fabric_val={fabric_val} />
-        <MainProduct images={allFabric}/>
+        <MainProduct images={allFabric} clothe_showcase= {clothe_showCase}/>
     </div>
   )
 }

@@ -26,14 +26,14 @@ const Header = () => {
     };
   }, []);
   return (
-    <div className={`fixed top-0 left-0 z-10  drop-shadow-lg border-none font-medium w-full flex justify-between items-center text-lg px-10 
+    <div className={`fixed top-0 left-0 z-20  drop-shadow-lg border-none font-medium w-full flex justify-between items-center text-lg px-10 
     ${navbg && "backdrop-blur-xl  bg-white/50  border-b-4"}`}>
       <div className="logo">
         <img src={logo} alt="logo_img" className="w-20" />
       </div>
       <nav className="flex w-[40%] justify-between items-center">
         <NavLink to="/">Home</NavLink>
-        <span className="cursor-pointer relative products ">
+        <span className="cursor-pointer z-20 relative products ">
           Products
           <ul className=" hidden absolute  gap-5 mt-1   py-1 px-5 border-none drop-shadow-xl">
             <li>

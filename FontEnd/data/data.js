@@ -2,6 +2,9 @@ import { clothe_1, clothe_2, clothe_3, clothe_4, clothe_5, clothe_6, clothe_7, c
 clothe_11, clothe_12, clothe_13, clothe_14, clothe_15, clothe_16, clothe_17, clothe_18, clothe_19, clothe_20, 
 clothe_21, clothe_22, clothe_23, clothe_24, clothe_25, clothe_26, clothe_27, clothe_28 } from "../public/images";
 
+import { clothe_showcase_1,clothe_showcase_2, clothe_showcase_3, clothe_showcase_4,clothe_showcase_5,clothe_showcase_6,
+  clothe_showcase_7, clothe_showcase_8, clothe_showcase_9, clothe_showcase_10, clothe_showcase_11, clothe_showcase_12 } from "../public/images";
+
 import { ladies_bag_1, ladies_bag_2, ladies_bag_3, ladies_bag_4, ladies_bag_5, ladies_bag_6, ladies_bag_7, ladies_bag_8,
 ladies_bag_9, ladies_bag_10, ladies_bag_11, ladies_bag_12, ladies_bag_13, ladies_bag_14, ladies_bag_15, ladies_bag_16, 
 ladies_bag_17, ladies_bag_18, ladies_bag_19, ladies_bag_20, ladies_bag_21, ladies_bag_22, ladies_bag_23,ladies_bag_24,
@@ -366,6 +369,27 @@ export const allFabric = {
   ]
 }
 
+export const clothe_showCase = {
+  items:[
+    {
+      img:clothe_showcase_1,
+    },
+    {
+      img:clothe_showcase_2,
+    },
+    {
+      img:clothe_showcase_3,
+    },
+
+    {
+      img:clothe_showcase_6,
+    },
+    {
+      img:clothe_showcase_8,
+    },
+
+  ]
+}
 
 
 

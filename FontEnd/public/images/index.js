@@ -34,6 +34,18 @@ export {default as clothe_28} from "./clothes/clothe_28.jpeg";
 
 //
 //clothe showcase
+export {default as clothe_showcase_1} from "./clothes/showCase_1.jpg";
+export {default as clothe_showcase_2} from "./clothes/showCase_2.jpg";
+export {default as clothe_showcase_3} from "./clothes/showCase_3.jpg";
+export {default as clothe_showcase_4} from "./clothes/showCase_4.jpg";
+export {default as clothe_showcase_5} from "./clothes/showCase_5.jpg";
+export {default as clothe_showcase_6} from "./clothes/showCase_6.jpg";
+export {default as clothe_showcase_7} from "./clothes/showCase_7.jpg";
+export {default as clothe_showcase_8} from "./clothes/showCase_8.jpg";
+export {default as clothe_showcase_9} from "./clothes/showCase_9.jpg";
+export {default as clothe_showcase_10} from "./clothes/showCase_10.jpg";
+export {default as clothe_showcase_11} from "./clothes/showCase_11.jpg";
+export {default as clothe_showcase_12} from "./clothes/showCase_12.jpg";
 
 export {default as ladies_bag_1} from "./bags/ladies_bag_1.png";
 export {default as ladies_bag_2} from "./bags/ladies_bag_2.jpg";
