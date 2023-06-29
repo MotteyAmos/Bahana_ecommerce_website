@@ -31,7 +31,7 @@ const Header = () => {
       <div className="logo">
         <img src={logo} alt="logo_img" className="w-20" />
       </div>
-      <nav className="flex w-[40%] justify-between items-center">
+      <nav className="flex w-[40%] justify-between items-center text-white/90">
         <NavLink to="/">Home</NavLink>
         <span className="cursor-pointer z-20 relative products ">
           Products
@@ -40,10 +40,10 @@ const Header = () => {
               <NavLink to="/all_fabrics">Fabrics</NavLink>
             </li>
             <li>
-              <NavLink to="/bags">bags</NavLink>
+              <NavLink to="/all_bags">bags</NavLink>
             </li>
             <li>
-              <NavLink to="/cuff_link">cuff_Link</NavLink>
+              <NavLink to="/all_cuffLink">cuff_Link</NavLink>
             </li>
           </ul>
         </span>

@@ -78,7 +78,8 @@ export {default as school_bag_4} from "./bags/school_bag_4.jpg";
 
 
 //showcase images goes here
-
+export {default as bag_showcase_1} from "./bags/showCase_1.jpg";
+export {default as bag_showcase_2} from "./bags/showCase_2.jpg";
 
 export {default as cuff_link_1} from "./Cuff_link/cuff_link_1.jpg";
 export {default as cuff_link_2} from "./Cuff_link/Cuff_link_2.jpg";
@@ -109,6 +110,12 @@ export {default as cuff_link_26} from "./Cuff_link/Cuff_link_26.jpg";
 
 
 //cuff link show case goes here
+export {default as cuff_link_showCase_1} from "./Cuff_link/showCase_1.jpg";
+export {default as cuff_link_showCase_2} from "./Cuff_link/showCase_2.jpg";
+export {default as cuff_link_showCase_3} from "./Cuff_link/showCase_3.jpg";
+export {default as cuff_link_showCase_4} from "./Cuff_link/showCase_4.jpg";
+export {default as cuff_link_showCase_5} from "./Cuff_link/showCase_5.jpg";
+
 
 
 

@@ -10,10 +10,14 @@ ladies_bag_9, ladies_bag_10, ladies_bag_11, ladies_bag_12, ladies_bag_13, ladies
 ladies_bag_17, ladies_bag_18, ladies_bag_19, ladies_bag_20, ladies_bag_21, ladies_bag_22, ladies_bag_23,ladies_bag_24,
 school_bag_1, school_bag_2, school_bag_3, school_bag_4} from "../public/images";
 
+import { bag_showcase_1, bag_showcase_2 } from "../public/images";
+
 import { cuff_link_1, cuff_link_2, cuff_link_3,cuff_link_4, cuff_link_5,cuff_link_6, cuff_link_7, cuff_link_8,
     cuff_link_9,cuff_link_10, cuff_link_11, cuff_link_12, cuff_link_13, cuff_link_14, cuff_link_15, cuff_link_16, cuff_link_17, cuff_link_18,
     cuff_link_19, cuff_link_20, cuff_link_21, cuff_link_22, cuff_link_23, cuff_link_24, cuff_link_25, cuff_link_26
 } from "../public/images"
+
+import { cuff_link_showCase_1, cuff_link_showCase_2, cuff_link_showCase_3,cuff_link_showCase_4 } from "../public/images";
 
 
 
@@ -383,6 +387,338 @@ export const clothe_showCase = {
 
     {
       img:clothe_showcase_6,
+    },
+    {
+      img:clothe_showcase_8,
+    },
+
+  ]
+}
+
+
+export const allBags = {
+  title: "title",
+  items:[
+    {
+      rating: "",
+      img: ladies_bag_1,
+      product_url:"",
+    },
+    {
+      rating: "",
+      img: ladies_bag_2,
+      product_url:"",
+    },
+    {
+      rating: "",
+      img: ladies_bag_3,
+      product_url:"",
+    },
+    {
+      rating: "",
+      img:ladies_bag_4,
+      product_url:"",
+    },
+    {
+      rating: "",
+      img: ladies_bag_5,
+      product_url:"",
+    },
+    {
+      rating: "",
+      img:ladies_bag_6,
+      product_url:"",
+    },
+    {
+      rating: "",
+      img:ladies_bag_7,
+      product_url:"",
+    },
+    {
+      rating: "",
+      img: ladies_bag_8,
+      product_url:"",
+    },
+    {
+      rating: "",
+      img: ladies_bag_10,
+      product_url:"",
+    },
+    {
+      rating: "",
+      img:ladies_bag_11,
+      product_url:"",
+    },
+    {
+      rating: "",
+      img: ladies_bag_12,
+      product_url:"",
+    },
+    {
+      rating: "",
+      img: ladies_bag_13,
+      product_url:"",
+    },
+    {
+      rating: "",
+      img:school_bag_3,
+      product_url:"",
+    },
+    {
+      rating: "",
+      img: ladies_bag_14,
+      product_url:"",
+    },
+    {
+      rating: "",
+      img: ladies_bag_15,
+      product_url:"",
+    },
+    {
+      rating: "",
+      img:ladies_bag_16,
+      product_url:"",
+    },
+    {
+      rating: "",
+      img: ladies_bag_17,
+      product_url:"",
+    },
+    {
+      rating: "",
+      img: school_bag_2,
+      product_url:"",
+    },
+    {
+      rating: "",
+      img: ladies_bag_18,
+      product_url:"",
+    },
+    {
+      rating: "",
+      img: ladies_bag_19,
+      product_url:"",
+    },
+    {
+      rating: "",
+      img: ladies_bag_20,
+      product_url:"",
+    },
+    {
+      rating: "",
+      img: school_bag_4,
+      product_url:"",
+    },
+    {
+      rating: "",
+      img: ladies_bag_21,
+      product_url:"",
+    },
+    {
+      rating: "",
+      img: ladies_bag_22,
+      product_url:"",
+    },
+    {
+      rating: "",
+      img: ladies_bag_23,
+      product_url:"",
+    },
+    {
+      rating: "",
+      img: ladies_bag_24,
+      product_url:"",
+    },
+    {
+      rating: "",
+      img: school_bag_1,
+      product_url:"",
+    },
+
+
+
+
+  ]
+}
+
+export const bag_showCase = {
+  items:[
+    {
+      img:bag_showcase_1,
+    },
+    {
+      img:bag_showcase_2,
+    },
+    {
+      img:clothe_showcase_3,
+    },
+
+    {
+      img:clothe_showcase_6,
+    },
+    {
+      img:clothe_showcase_8,
+    },
+
+  ]
+}
+
+
+export const allCuff_link = {
+  title: "title",
+  items:[
+    {
+      rating: "",
+      img: cuff_link_1,
+      product_url:"",
+    },
+    {
+      rating: "",
+      img: cuff_link_2,
+      product_url:"",
+    },
+    {
+      rating: "",
+      img: cuff_link_3,
+      product_url:"",
+    },
+    {
+      rating: "",
+      img:cuff_link_4,
+      product_url:"",
+    },
+    {
+      rating: "",
+      img: cuff_link_5,
+      product_url:"",
+    },
+    {
+      rating: "",
+      img:cuff_link_6,
+      product_url:"",
+    },
+    {
+      rating: "",
+      img:cuff_link_7,
+      product_url:"",
+    },
+    {
+      rating: "",
+      img: cuff_link_8,
+      product_url:"",
+    },
+    {
+      rating: "",
+      img: cuff_link_9,
+      product_url:"",
+    },
+    {
+      rating: "",
+      img:cuff_link_10,
+      product_url:"",
+    },
+    {
+      rating: "",
+      img: cuff_link_11,
+      product_url:"",
+    },
+    {
+      rating: "",
+      img: cuff_link_12,
+      product_url:"",
+    },
+    {
+      rating: "",
+      img:cuff_link_13,
+      product_url:"",
+    },
+    {
+      rating: "",
+      img: cuff_link_14,
+      product_url:"",
+    },
+    {
+      rating: "",
+      img: cuff_link_15,
+      product_url:"",
+    },
+    {
+      rating: "",
+      img:cuff_link_16,
+      product_url:"",
+    },
+    {
+      rating: "",
+      img: cuff_link_17,
+      product_url:"",
+    },
+    {
+      rating: "",
+      img: cuff_link_18,
+      product_url:"",
+    },
+    {
+      rating: "",
+      img: cuff_link_19,
+      product_url:"",
+    },
+    {
+      rating: "",
+      img:cuff_link_20,
+      product_url:"",
+    },
+    {
+      rating: "",
+      img: cuff_link_21,
+      product_url:"",
+    },
+    {
+      rating: "",
+      img: cuff_link_22,
+      product_url:"",
+    },
+    {
+      rating: "",
+      img: cuff_link_23,
+      product_url:"",
+    },
+    {
+      rating: "",
+      img: cuff_link_24,
+      product_url:"",
+    },
+    {
+      rating: "",
+      img: cuff_link_25,
+      product_url:"",
+    },
+    {
+      rating: "",
+      img: cuff_link_26,
+      product_url:"",
+    },
+
+
+
+
+
+  ]
+}
+
+export const cufflink_showCase = {
+  items:[
+    {
+      img:cuff_link_showCase_1,
+    },
+    {
+      img:cuff_link_showCase_2,
+    },
+    {
+      img:cuff_link_showCase_3,
+    },
+
+    {
+      img:cuff_link_showCase_4,
     },
     {
       img:clothe_showcase_8,

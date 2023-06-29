@@ -2,10 +2,10 @@ import { FabricCard } from ".";
 
 const MainProduct = ({
   images: { title, items },
-  clothe_showcase: { items: showCases },
+  showcase: { items: showCases },
 }) => {
   return (
-    <div className="flex gap-10 justify-between container mx-auto px-[10rem] mt-20 ">
+    <div className="flex gap-10 justify-between container mx-auto px-[10rem] mt-20  mb-20">
       <div className=" grid gap-10">
         {showCases.map((item, key) => (
           <FabricCard key={key} value={item} isshowCase />

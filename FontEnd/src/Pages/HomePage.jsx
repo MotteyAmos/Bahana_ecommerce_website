@@ -12,8 +12,7 @@ const HomePage = () => {
        <Features value={handBag} isHandBag/>
        <TopSales value={topratesales} isTopSale/>
        <Features value={cuff_link} />
-       
-       <Footer/>
+      
     </div>
   )
 }
