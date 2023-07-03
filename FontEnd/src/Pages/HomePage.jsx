@@ -7,8 +7,8 @@ const HomePage = () => {
 
   return (
     <div className=" grid gap-[10rem]">   
-        <HomeMain/>
-        <TopSales value={popularsales}/>
+      <HomeMain/>
+      <TopSales value={popularsales}/>
        <Features value={handBag} isHandBag/>
        <TopSales value={topratesales} isTopSale/>
        <Features value={cuff_link} />

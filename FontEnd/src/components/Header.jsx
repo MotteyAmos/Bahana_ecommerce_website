@@ -26,16 +26,17 @@ const Header = () => {
     };
   }, []);
   return (
+
     <div className={`fixed top-0 left-0 z-20  drop-shadow-lg border-none font-medium w-full flex justify-between items-center text-lg px-10 
     ${navbg && "backdrop-blur-xl  bg-white/50  border-b-4"}`}>
       <div className="logo">
         <img src={logo} alt="logo_img" className="w-20" />
       </div>
-      <nav className="flex w-[40%] justify-between items-center text-white/90">
+      <nav className="flex w-[40%] justify-between items-center text-slate-800">
         <NavLink to="/">Home</NavLink>
-        <span className="cursor-pointer z-20 relative products ">
+        <span className="cursor-pointer group  z-20 relative products ">
           Products
-          <ul className=" hidden absolute  gap-5 mt-1   py-1 px-5 border-none drop-shadow-xl">
+          <ul className=" hidden absolute group-hover:flex   gap-5 mt-1   py-1 px-5 border-none drop-shadow-xl">
             <li>
               <NavLink to="/all_fabrics">Fabrics</NavLink>
             </li>
@@ -59,8 +60,8 @@ const Header = () => {
           <input
             type="text"
             placeholder="search item....."
-            className={`outline-none searchBar px-2 absolute right-4 transitionTheme border-none w-[90%] h-10 rounded-l-lg   ${
-              !searchBar && " w-[0%] absolute right-0 h-0 rounded-sm  "
+            className={`outline-none searchBar px-2 absolute right-4  transitionTheme border-none w-[90%] h-10 rounded-l-lg   ${
+              !searchBar && " w-[0]  absolute right-0 h-[0] rounded-sm  "
             }`}
           />
           <button
