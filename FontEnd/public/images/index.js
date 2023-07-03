@@ -1,5 +1,6 @@
 
-export {default as logo} from "./logo.jpeg";
+
+export {default as logo} from './logo.png';
 
 export {default as clothe_1} from "./clothes/clothe_1.jpeg";
 export {default as clothe_2} from "./clothes/clothe_2.jpg";
@@ -33,8 +34,20 @@ export {default as clothe_28} from "./clothes/clothe_28.jpeg";
 
 //
 //clothe showcase
+export {default as clothe_showcase_1} from "./clothes/showCase_1.jpg";
+export {default as clothe_showcase_2} from "./clothes/showCase_2.jpg";
+export {default as clothe_showcase_3} from "./clothes/showCase_3.jpg";
+export {default as clothe_showcase_4} from "./clothes/showCase_4.jpg";
+export {default as clothe_showcase_5} from "./clothes/showCase_5.jpg";
+export {default as clothe_showcase_6} from "./clothes/showCase_6.jpg";
+export {default as clothe_showcase_7} from "./clothes/showCase_7.jpg";
+export {default as clothe_showcase_8} from "./clothes/showCase_8.jpg";
+export {default as clothe_showcase_9} from "./clothes/showCase_9.jpg";
+export {default as clothe_showcase_10} from "./clothes/showCase_10.jpg";
+export {default as clothe_showcase_11} from "./clothes/showCase_11.jpg";
+export {default as clothe_showcase_12} from "./clothes/showCase_12.jpg";
 
-export {default as ladies_bag_1} from "./bags/ladies_bag_1.jpg";
+export {default as ladies_bag_1} from "./bags/ladies_bag_1.png";
 export {default as ladies_bag_2} from "./bags/ladies_bag_2.jpg";
 export {default as ladies_bag_3} from "./bags/ladies_bag_3.jpg";
 export {default as ladies_bag_4} from "./bags/ladies_bag_4.jpg";
@@ -65,7 +78,8 @@ export {default as school_bag_4} from "./bags/school_bag_4.jpg";
 
 
 //showcase images goes here
-
+export {default as bag_showcase_1} from "./bags/showCase_1.jpg";
+export {default as bag_showcase_2} from "./bags/showCase_2.jpg";
 
 export {default as cuff_link_1} from "./Cuff_link/cuff_link_1.jpg";
 export {default as cuff_link_2} from "./Cuff_link/Cuff_link_2.jpg";
@@ -94,7 +108,19 @@ export {default as cuff_link_24} from "./Cuff_link/Cuff_link_24.jpg";
 export {default as cuff_link_25} from "./Cuff_link/Cuff_link_25.jpg";
 export {default as cuff_link_26} from "./Cuff_link/Cuff_link_26.jpg";
 
+
 //cuff link show case goes here
+export {default as cuff_link_showCase_1} from "./Cuff_link/showCase_1.jpg";
+export {default as cuff_link_showCase_2} from "./Cuff_link/showCase_2.jpg";
+export {default as cuff_link_showCase_3} from "./Cuff_link/showCase_3.jpg";
+export {default as cuff_link_showCase_4} from "./Cuff_link/showCase_4.jpg";
+export {default as cuff_link_showCase_5} from "./Cuff_link/showCase_5.jpg";
+
+
+
+
+
+export {default as fabricShowCase } from "./video/homeFashionShowCase.mp4";
 
 
 

@@ -1,15 +1,15 @@
 import ItemCard from "./ItemCard"
 import Title from "./Title"
 
-const TopSales = ({,value:{title,items}}) => {
+const TopSales = ({value:{title,items}}) => {
   return (
     <>
-    <div className="popular_sale  container mx-auto px-[15rem] mt-[10rem] ">
+    <div className=" container mx-auto px-[15rem]  flex-wrap mt-[10rem] ">
         <Title title={title}/>
-        <div className="flex justify-between">
+        <div className="justify-between grid grid-cols-3 gap-5">
         {
-            items.map(item=>(
-                <ItemCard value={item}/>
+            items.map((item, key)=>(
+                <ItemCard key={key} value={item} />
             ))
         }
         </div>
