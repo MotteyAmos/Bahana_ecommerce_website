@@ -6,7 +6,7 @@ import VideoClip from "../components/videoClip"
 const HomePage = () => {
 
   return (
-    <div className=" grid gap-[10rem]">   
+    <div className=" grid gap-[10rem] mb-10">   
       <HomeMain/>
       <TopSales value={popularsales}/>
        <Features value={handBag} isHandBag/>

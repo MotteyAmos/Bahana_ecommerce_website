@@ -3,6 +3,7 @@ import { Route, Router, NavLink } from "react-router-dom";
 
 import "../styles/navStyle.css";
 import { CiSearch } from "react-icons/ci";
+import { RiArrowDropDownLine} from "react-icons/ri";
 import { useState, useEffect } from "react";
 
 const Header = () => {
@@ -34,19 +35,23 @@ const Header = () => {
       </div>
       <nav className="flex w-[40%] justify-between items-center text-slate-800">
         <NavLink to="/">Home</NavLink>
-        <span className="cursor-pointer group  z-20 relative products ">
-          Products
-          <ul className=" hidden absolute group-hover:flex   gap-5 mt-1   py-1 px-5 border-none drop-shadow-xl">
-            <li>
-              <NavLink to="/all_fabrics">Fabrics</NavLink>
-            </li>
-            <li>
-              <NavLink to="/all_bags">bags</NavLink>
-            </li>
-            <li>
-              <NavLink to="/all_cuffLink">cuff_Link</NavLink>
-            </li>
-          </ul>
+        <span className="cursor-pointer group flex items-center gap-1 z-20 relative products ">
+          <div className="">
+            Products
+            <ul className=" hidden absolute group-hover:flex   gap-5 mt-1   py-1 px-5 border-none drop-shadow-xl">
+              <li>
+                <NavLink to="/all_fabrics">Fabrics</NavLink>
+              </li>
+              <li>
+                <NavLink to="/all_bags">bags</NavLink>
+              </li>
+              <li>
+                <NavLink to="/all_cuffLink">cuff_Link</NavLink>
+              </li>
+            </ul>
+          </div>
+
+          <RiArrowDropDownLine size={30}/>
         </span>
         <NavLink to="/about">About</NavLink>
         <NavLink to="/footer">Contact us</NavLink>
