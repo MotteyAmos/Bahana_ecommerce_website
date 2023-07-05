@@ -11,14 +11,14 @@ const ItemCard = ({value:{img, title, text, rating,btn,price, color,product_url,
   let radomRotate = `hover:-rotate-[${randomNumber}deg]`;
   return (
     <div className={`w-[20rem] h-[25rem] drop-shadow-2xl rounded-md  border-2 ${(type == 'topSale') && "border-none rounded-md overflow-hidden "} overflow-hidden` }>
-        <Link to={'/${product_url}'}>
+        <Link to={product_url}>
           <div className={`w-full overflow-hidden h-[90%] ${(type == 'topSale') && 'h-[100]'}`}>
             <img src={img} alt={title} className={`h-[90%] w-full hover:scale-110 transitionTheme ${(type == 'topSale') && radomRotate}`}/>
           </div>
         </Link>
         {
           (type != 'topSale') &&(
-            <Link to={`/${product_url}`}>
+            <Link to={product_url}>
               <div className="text-lg textFont tracking-wide text-center font-medium text-slate-900 hover:text-slate-500" >{text}</div>
             </Link>
           )
