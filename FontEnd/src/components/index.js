@@ -9,3 +9,5 @@ export {default as PopularSales} from "./PopularSales";
 export {default as Banner} from "./Banner";
 export {default as MainProduct} from "./MainProduct";
 export {default as FabricCard} from "./FabricCard";
+export {default as VideoClip} from "./VideoClip";
+export {default as TypedReactHooksDemo} from './TypedReactHookDemo';

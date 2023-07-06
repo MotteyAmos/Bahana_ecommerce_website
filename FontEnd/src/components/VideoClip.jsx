@@ -1,6 +1,5 @@
 
-import vi from "../../public/images/video/homeFashionShowCase.mp4";
-const VideoClip = ({video}) => {
+const VideoClip = ({video:{video}}) => {
   return (
     <div className="w-full h-[25rem] relative">
       <div className="w-full h-full absolute bg-slate-950 opacity-70 z-10">
@@ -11,7 +10,7 @@ const VideoClip = ({video}) => {
         <span className="text-4xl underline ">With Us</span>
         <span className="text-muted text-slate-500">We Offer The Best Of The Best</span>
       </div>
-       <video src={vi} autoPlay muted loop type="video/mp4" 
+       <video src={video} autoPlay muted loop type="video/mp4" 
        className="object-cover w-full h-full max-h-[100%] " />
     </div>
   )

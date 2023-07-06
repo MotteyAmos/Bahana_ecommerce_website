@@ -1,11 +1,11 @@
 import { Link } from "react-router-dom";
 import { logo } from "../../public/images";
-import VideoClip from "./videoClip";
+
 
 const Footer = () => {
   return (
     <div>
-      <VideoClip />
+      
          <div className=" bg-slate-950 text-slate-100 textFont ">
       <div className="container px-[15rem] py-5">
         <div className="flex  justify-between mb-10">
