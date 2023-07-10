@@ -23,6 +23,14 @@ import { cuff_link_showCase_1, cuff_link_showCase_2, cuff_link_showCase_3,cuff_l
 
 import { fabricShowCase } from "../public/images";
 
+export const homeMainSwipperImg = {
+      bag1:ladies_bag_17,
+      bag2: school_bag_1, 
+      fabric1:clothe_28,
+      fabric2: clothe_21,
+      cuff_link1:cuff_link_6,
+      cuff_link2: cuff_link_12
+}
 
 export const homeShowCase = {
   video: fabricShowCase,

@@ -14,12 +14,12 @@ const TypedReactHooksDemo = ({heroSubTitle}) => {
    
    
     const options = {
-    	strings: [
-            heroSubTitle
-      ],
-      typeSpeed: 50,
-      backSpeed: 50,
+    	strings: heroSubTitle
+      ,
+      typeSpeed: 190,
+      backSpeed: 190,
       loop:true,
+      cursorChar: '_',
       loopCount: Infinity,
       fadeOutClass: 'typed-fade-out',
       fadeOutDelay: 500,

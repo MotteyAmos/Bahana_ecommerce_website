@@ -66,7 +66,7 @@ const Header = () => {
             type="text"
             placeholder="search item....."
             className={`outline-none searchBar px-2 absolute right-4  transitionTheme border-none w-[90%] h-10 rounded-l-lg   ${
-              !searchBar && " w-[0%]  absolute right-0 h-[0] rounded-sm  "
+              !searchBar && " w-[0]  absolute right-0 h-[0] rounded-sm  "
             }`}
           />
           <button
