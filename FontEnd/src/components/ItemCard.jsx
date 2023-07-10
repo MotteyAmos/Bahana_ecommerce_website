@@ -23,7 +23,7 @@ const ItemCard = ({value:{img, title, text, rating,btn,price, color,product_url,
             </Link>
           )
         }
-        <div className="backdrop-blur-md font-bold text-2xl  text-amber-600 w-[0%] h-[0%] group-hover:w-[100%] group-hover:h-[100%] flex items-center justify-center group-hover:z-[10] transitionTheme gap-5 bg-white/30 z-[-5] absolute top-0 right-0">
+        <div className="backdrop-blur-md font-bold text-2xl  text-amber-600 w-[0%] h-[0%] group-hover:w-[100%] group-hover:h-[70%] flex items-center justify-center group-hover:z-[10] transitionTheme gap-5 bg-white/30 z-[-5] absolute top-0 right-0">
           <button className="bg-white px-2 py-1 active:scale-[95%] rounded-md">
             Buy
           </button>
