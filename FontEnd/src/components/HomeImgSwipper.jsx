@@ -1,5 +1,14 @@
 // Import Swiper React components
 import { Swiper, SwiperSlide } from 'swiper/react';
+import { homeMainSwipperImg } from '../../data/data';
+
+
+import {Navigation, Pagination, Scrollbar, A11y, EffectFade} from  'swiper';
+//import 'swiper/css'
+import 'swiper/swiper-bundle.min.css';
+
+//import "../styles/swipperStyle.css";
+//import SwiperCore, { Navigation, Pagination, Scrollbar, A11y } from 'swiper';
 // import required modules
 //import { Pagination } from 'swiper/modules';
 
@@ -8,14 +17,14 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 //import 'swiper/modules/pagination/pagination.min.css';
 //import 'swiper/css/effect-coverflow'
 
-import '../styles/swipperStyle.css';
+//import '../styles/swipperStyle.css';
 
-import 'swiper/css';
+//import 'swiper/css';
 
 
 const IMG = (src)=>{
     return (
-    <img src={src} alt="" className="w-[20rem] h-[20rem] absolute -bottom-[10rem] left-[15rem] border-2 hover:scale-110 transitionTheme hover:rotate-[-10deg] hover:z-10 drop-shadow-2xl"/>
+    <img src={src} alt="" className="w-[50%] h-[100%]   border-2 hover:scale-110 transitionTheme hover:rotate-[-10deg] hover:z-10 drop-shadow-2xl"/>
     )
 
 }
@@ -23,20 +32,24 @@ const IMG = (src)=>{
 export default function HomeImgSwipper() {
   return (
     <>
-      <Swiper
-        pagination={{
-          dynamicBullets: true,
-        }}
-        modules={[Pagination]}
-        className="mySwiper"
-      >
-        <SwiperSlide>1</SwiperSlide>
-        <SwiperSlide>ffgfgf</SwiperSlide>
-        <SwiperSlide>dfgnm</SwiperSlide>
-        <SwiperSlide>dfdf</SwiperSlide>
-        <SwiperSlide>dfd</SwiperSlide>
-        <SwiperSlide>dfgrgr</SwiperSlide>
-      </Swiper>
+<Swiper
+    modules={[Navigation, Pagination, Scrollbar, A11y]}
+      spaceBetween={50}
+      slidesPerView={1}
+      navigation
+      pagination={{clickable:true}}
+      scrollbar={{draggable:true}}
+     effect='fade'
+      
+    >
+      <SwiperSlide className='flex justify-center items-center'>{IMG(homeMainSwipperImg.bag1)}</SwiperSlide>
+      <SwiperSlide className='flex justify-center items-center'>{IMG(homeMainSwipperImg.cuff_link1)}</SwiperSlide>
+      <SwiperSlide className='flex justify-center items-center'>{IMG(homeMainSwipperImg.fabric1)}</SwiperSlide>
+      <SwiperSlide className='flex justify-center items-center'>{IMG(homeMainSwipperImg.bag2)}</SwiperSlide>
+      <SwiperSlide className='flex justify-center items-center'>{IMG(homeMainSwipperImg.cuff_link2)}</SwiperSlide>
+      <SwiperSlide className='flex justify-center items-center'>{IMG(homeMainSwipperImg.fabric2)}</SwiperSlide>
+
+    </Swiper>
     </>
   );
 }
