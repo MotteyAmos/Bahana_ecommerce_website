@@ -25,9 +25,8 @@ const HomePage = () => {
         <Features value={handBag} isHandBag />
         <TopSales value={topratesales} isTopSale />
         <Features value={cuff_link} />
-        <video src="public\images\video\cuffLink.mp4"></video>
       </div>
-      <VideoClip video={video}/>
+      <VideoClip video={allfabricVideo}/>
     </>
   );
 };

@@ -1,5 +1,5 @@
 
-const VideoClip = ({video:{video}}) => {
+const VideoClip = ({video}) => {
   return (
     <div className="w-full h-[25rem] relative">
       <div className="w-full h-full absolute bg-slate-950 opacity-70 z-10">

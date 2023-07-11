@@ -61,6 +61,7 @@ const Header = () => {
           !searchBar && ""
         }`}
       >
+       
         <div className={`w-full absolute searchBar h-full right-0 flex items-center ${!searchBar && "w-[10%] "}`}>
           <input
             type="text"

@@ -1,6 +1,6 @@
 import { allCuff_link, cufflink_showCase } from "../../data/data";
 import { Banner, MainProduct } from "../components";
-import {allfabricVideo} from "../../public/images";
+import {allCuffLinkVideo} from "../../public/images";
 
 import VideoClip from "../components/VideoClip";
 
@@ -11,7 +11,7 @@ const AllCuffLInk = ({ val }) => {
         <Banner val={val} />
         <MainProduct images={allCuff_link} showcase={cufflink_showCase} />
       </div>
-      <VideoClip video={allfabricVideo}/>
+      <VideoClip video={allCuffLinkVideo}/>
       
     </>
   );
