@@ -13,8 +13,8 @@ import {
   homeShowCase,
 } from "../../data/data";
 import {VideoClip} from "../components"
-import {allfabricVideo, allCuffLinkVideo} from "../../public/images";
-import video from "../../public/images/video/homeFashionShowCase.mp4";
+import {homeVideo} from "../../public/images";
+
 
 const HomePage = () => {
   return (
@@ -26,7 +26,7 @@ const HomePage = () => {
         <TopSales value={topratesales} isTopSale />
         <Features value={cuff_link} />
       </div>
-      <VideoClip video={allfabricVideo}/>
+      <VideoClip video={homeVideo}/>
     </>
   );
 };

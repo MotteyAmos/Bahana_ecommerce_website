@@ -138,6 +138,8 @@ export {default as fabricShowCase } from "./video/homeFashionShowCase.mp4";
 
 export {default as allfabricVideo} from "./video/homeFashionShowCase.mp4";
 export {default as allCuffLinkVideo} from "./video/cuffLink.mp4";
+export {default as homeVideo} from  "./video/homeFashionShowCase2.mp4";
+export {default as bagShowCaseVideo} from "./video/bagFashionShowCase.mp4";
 
 
 
