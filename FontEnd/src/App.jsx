@@ -11,7 +11,7 @@ function App() {
 
 
   return (
-    <div className="">
+    <div className="max-w-[100vw] overflow-hidden">
       <Header/>
     
       <Routes>
