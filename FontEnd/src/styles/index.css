@@ -26,5 +26,37 @@
 .styleText{
     font-family: 'Henny Penny', cursive;
 }
+
+.cart-transition-theme{
+    @apply transition-all ease-in-out duration-500 delay-200
+  }
+
+.removeScrollBar::-webkit-scrollbar {
+    display: none;
+  }
+  
+  /* Hide scrollbar for IE, Edge and Firefox */
+  .removeScrollBar {
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+  }
+
+  html{
+    overflow-x: hidden;
+    max-width: 100%;
+  }
+  body{
+    max-width:100%;
+  }
+
+
+  .hide-scrollbar {
+    scrollbar-width: none; /* For Firefox */
+    -ms-overflow-style: none; /* For Internet Explorer and Edge */
+    &::-webkit-scrollbar {
+      width: 0 !important; /* For Chrome, Safari, and Opera */
+    }
+  }
+  
     
 }

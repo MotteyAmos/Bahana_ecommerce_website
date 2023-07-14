@@ -1,12 +1,23 @@
 import { Link } from "react-router-dom"
 import { GiShoppingBag } from 'react-icons/gi';
-const ItemCard = ({value:{img, title, text, rating,btn,price, color,product_url, type}}) => {
+import { addItem, getTotals,openCart } from "../Features/cartSlice";
+import { useDispatch } from "react-redux";
+
+const ItemCard = ({value:{id, img, title, text, rating,btn,price, color,product_url, type}}) => {
   // we are still working on the random number animation 
   
   let randomNumber =Math.floor(Math.random() * (100 -50)) + 50 ; 
   let sign = Math.random() < 0.5 ? "-" : "";
   console.log(sign)
   console.log(randomNumber);
+
+
+  const dispatch = useDispatch(addItem);
+
+  const onAddItem = ()=>{
+    dispatch(addItem({ id, title, text, rating, btn, img, price, color }))
+  }
+  dispatch(getTotals())
 
   let radomRotate = `hover:-rotate-[${randomNumber}deg]`;
   return (
@@ -24,7 +35,9 @@ const ItemCard = ({value:{img, title, text, rating,btn,price, color,product_url,
           )
         }
         <div className="backdrop-blur-md font-bold text-2xl  text-amber-600 w-[0%] h-[0%] group-hover:w-[100%] group-hover:h-[82%] flex items-center justify-center group-hover:z-[10] transitionTheme gap-5 bg-white/30 z-[-5] absolute top-0 right-0">
-          <button className="bg-white px-2 py-1 active:scale-[95%] rounded-md">
+          <button 
+          onClick={()=>{onAddItem(),dispatch(getTotals())}}
+          className="bg-white px-2 py-1 active:scale-[95%] rounded-md">
             Buy
           </button>
           <button className="bg-white px-2 py-1 rounded-md active:scale-[95%]">

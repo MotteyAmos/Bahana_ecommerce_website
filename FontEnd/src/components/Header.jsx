@@ -5,11 +5,22 @@ import "../styles/navStyle.css";
 import { CiSearch } from "react-icons/ci";
 import { RiArrowDropDownLine } from "react-icons/ri";
 import { useState, useEffect } from "react";
+import { openCart,selectTotalQuantity } from "../Features/cartSlice";
+import { useDispatch, useSelector } from "react-redux";
+import {
+  MagnifyingGlassIcon,
+  HeartIcon,
+  ShoppingBagIcon,
+} from "@heroicons/react/24/solid";
+
 
 const Header = ({showMenu}) => {
   const [searchBar, setSearchBar] = useState(false);
   const [navbg, setNavbg] = useState(false);
   const [getWidth, setWidth] = useState(window.innerWidth);
+
+  const dispatch = useDispatch();
+  let totalQuantity = useSelector(selectTotalQuantity)
 
   const checkScrollHight = () => {
     if (scrollY > 40) {
@@ -32,10 +43,10 @@ const Header = ({showMenu}) => {
   if (getWidth > 640) {
     return (
       <div
-        className={` top-0 left-0 z-20 absolute  drop-shadow-lg border-none font-medium w-full flex justify-between items-center text-lg px-10 
-    `}
+        className={` top-0 left-0 z-20 fixed  drop-shadow-lg border-none transitionTheme font-medium w-full flex justify-between items-center text-lg px-10 
+    ${navbg &&'backdrop-blur-xl drop-shadow-3xl bg-white/50 border-b-4'}`}
       >
-        <div className="logo">
+        <div className="logo mx-10">
           <img src={logo} alt="logo_img" className="w-20" />
         </div>
         <nav className="flex w-[40%] justify-between items-center text-slate-800">
@@ -61,6 +72,31 @@ const Header = ({showMenu}) => {
           <NavLink to="/about">About</NavLink>
           <NavLink to="/footer">Contact us</NavLink>
         </nav>
+        <nav className="flex container w-fit z-[100] justify-between top-5 px-[3rem]] m-auto ">
+        <ul className="flex gap-3 ">
+
+          <li>
+            <HeartIcon
+              className={`w-6  text-slate-900 hover:scale-125 transition-theme cursor-pointer ${
+                navbg && "text-slate-900"
+              }`}
+            />
+          </li>
+          <li className="relative">
+            <button type="button" onClick={()=>{dispatch(openCart())}}>
+              <ShoppingBagIcon
+                className={`w-6  text-slate-900 hover:scale-125 transition-theme cursor-pointer ${
+                  navbg && "text-slate-900"
+                }`}
+              />
+            </button>
+            
+            <span className="text-slate-800 bg-slate-100 w-[1.2rem] h-[1.2rem]   text-sm grid items-center justify-center rounded-[50%] absolute -bottom-2 -right-2">
+              {totalQuantity }
+            </span>
+          </li>
+        </ul>
+      </nav>
         <div
           className={` searchBar  relative  rounded-full drop-shadow-md max-w-sm w-[40em] ${
             !searchBar && ""
