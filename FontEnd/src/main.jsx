@@ -9,6 +9,7 @@ import {
 import { store } from './app/store'
 import { Provider } from 'react-redux'
 
+//npm ci && npm run build
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
