@@ -1,11 +1,11 @@
 import { Link } from "react-router-dom"
 import { GiShoppingBag } from 'react-icons/gi';
-import { addItem, getTotals,openCart } from "../Features/cartSlice";
+import { addItem, getTotals,openCart} from "../Features/cartSlice";
 import { useDispatch } from "react-redux";
 
-const ItemCard = ({value:{id, img, title, text, rating,btn,price, color,product_url, type}}) => {
+const ItemCard = ({isSearchProduct,value:{id, img, title, text, rating,btn,price, color,product_url, type}}) => {
   // we are still working on the random number animation 
-  
+
   let randomNumber =Math.floor(Math.random() * (100 -50)) + 50 ; 
   let sign = Math.random() < 0.5 ? "-" : "";
   console.log(sign)
@@ -21,10 +21,13 @@ const ItemCard = ({value:{id, img, title, text, rating,btn,price, color,product_
 
   let radomRotate = `hover:-rotate-[${randomNumber}deg]`;
   return (
-    <div className={`w-[20rem] h-[25rem] relative group hover:z-[5] drop-shadow-2xl rounded-md overflow-hidden border-2 ${(type == 'topSale') && "border-none rounded-md overflow-hidden "} overflow-hidden` }>
+    <div className={`w-[20rem] h-[25rem] ${isSearchProduct && 'h-[10rem]'} relative group hover:z-[5] drop-shadow-2xl rounded-md overflow-hidden border-2 ${(type == 'topSale') && "border-none rounded-md overflow-hidden "} overflow-hidden` }>
         <Link to={product_url}>
-          <div className={`w-full overflow-hidden h-[90%] ${(type == 'topSale') && 'h-[100]'}`}>
-            <img src={img} alt={title} className={`h-[90%] w-full hover:scale-110 transitionTheme ${(type == 'topSale') && radomRotate}`}/>
+          <div className={`w-full overflow-hidden h-[100%] ${isSearchProduct && 'h-[100%] '}  ${(type == 'topSale') && 'h-[100]'}`}>
+            <img src={img} alt={title} className={`${isSearchProduct && 'h-full '} h-[90%] w-full hover:scale-110 transitionTheme ${(type == 'topSale') && radomRotate}`}/>
+            <span className="absolute top-2 right-5 bg-slate-200 p-[2px] grid items-center justify-center  text-sm rounded">
+            ${price}
+          </span>
           </div>
         </Link>
         {
@@ -34,14 +37,14 @@ const ItemCard = ({value:{id, img, title, text, rating,btn,price, color,product_
             </Link>
           )
         }
-        <div className="backdrop-blur-md font-bold text-2xl  text-amber-600 w-[0%] h-[0%] group-hover:w-[100%] group-hover:h-[82%] flex items-center justify-center group-hover:z-[10] transitionTheme gap-5 bg-white/30 z-[-5] absolute top-0 right-0">
+        <div className={`${isSearchProduct && 'group-hover:h-full '} backdrop-blur-md font-bold text-2xl  text-amber-600 w-[0%] h-[0%] group-hover:w-[100%] group-hover:h-[82%] flex items-center justify-center group-hover:z-[10] transitionTheme gap-5 bg-white/30 z-[-5] absolute top-0 right-0`}>
           <button 
           onClick={()=>{onAddItem(),dispatch(getTotals())}}
           className="bg-white px-2 py-1 active:scale-[95%] rounded-md">
             Buy
           </button>
-          <button className="bg-white px-2 py-1 rounded-md active:scale-[95%]">
-            <GiShoppingBag className=""/>
+          <button className="bg-white px-2 py-1 rounded-md active:scale-[95%]" onClick={()=>{dispatch(openCart())}} >
+            <GiShoppingBag className="" />
           </button>
         </div>
     </div>

@@ -13,7 +13,7 @@ const Features = ({isHandBag, value: { heading, title, text, btn, url, img } }) 
             <p className="text-slate-800"> {text}</p>
           </div>
           <div className="bg-slate-900 scale-[1.2] h-[2rem] w-[8rem] grid items-center justify-center text-white
-          rounded-sm active:scale-90 transition-all duration-500 ease-in-out  ">
+          rounded-sm active:scale-[99%] transition-all duration-500 ease-in-out  ">
             <Link to={url} className="">
                 {btn}
             </Link>

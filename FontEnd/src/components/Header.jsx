@@ -1,6 +1,8 @@
 import { logo } from "../../public/images";
 import { Route, Router, NavLink } from "react-router-dom";
 
+import { searchState, searchedProduct } from "../Features/searchSlice";
+
 import "../styles/navStyle.css";
 import { CiSearch } from "react-icons/ci";
 import { RiArrowDropDownLine } from "react-icons/ri";
@@ -21,6 +23,7 @@ const Header = ({showMenu}) => {
 
   const dispatch = useDispatch();
   let totalQuantity = useSelector(selectTotalQuantity)
+ // const searchState = useSelector(selectSearchState);
 
   const checkScrollHight = () => {
     if (scrollY > 40) {
@@ -54,7 +57,7 @@ const Header = ({showMenu}) => {
           <span className="cursor-pointer group flex items-center gap-1 z-20 relative products ">
             <div className="">
               Products
-              <ul className=" hidden absolute group-hover:flex   gap-5 mt-1   py-1 px-5 border-none drop-shadow-xl">
+              <ul className=" hidden absolute group-hover:flex   gap-5 mt-0   py-0 px-5 border-none drop-shadow-xl">
                 <li>
                   <NavLink to="/all_fabrics">Fabrics</NavLink>
                 </li>
@@ -110,16 +113,17 @@ const Header = ({showMenu}) => {
             <input
               type="text"
               placeholder="search item....."
+              onChange={e=>dispatch(searchedProduct({value: e.target.value}))}
               className={`outline-none searchBar px-2 absolute right-4  transitionTheme border-none w-[90%] h-10 rounded-l-lg   ${
-                !searchBar && " w-[0]  absolute right-0 h-[0] rounded-sm  "
+                !searchBar && " w-[0%]  absolute right-0 h-[0%] rounded-sm  "
               }`}
             />
             <button
-              className={` p-1 absolute  bg-[#dc2626] searchBar rounded-r-full  w-10 h-10 grid justify-center items-center  right-0  ${
+              className={` p-1 absolute  bg-[#dc2626] searchBar rounded-r-full  w-[10%] h-10 grid justify-center items-center  right-0  ${
                 !searchBar &&
                 "rounded-r-full rounded-l-full grid justify-center items-center  "
               }`}
-              onClick={() => setSearchBar(!searchBar)}
+              onClick={() => {setSearchBar(!searchBar); dispatch(searchState())}}
             >
               <CiSearch
                 className="hover:scale-[95%] searchBar"
@@ -135,7 +139,7 @@ const Header = ({showMenu}) => {
   else if (getWidth <= 640){
     return (
     
-      <div className="bg-black z-100">
+      <div className=" z-100">
         {
           !showMenu &&(
             <div

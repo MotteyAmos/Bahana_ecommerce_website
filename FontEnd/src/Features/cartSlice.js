@@ -6,6 +6,7 @@ const initialState = {
     selectedItems:  localStorage.getItem("cartItems")? JSON.parse(localStorage.getItem("cartItems")): [],
     totalQTY: localStorage.getItem("totalQTY")? JSON.parse(localStorage.getItem("totalQTY")): 0,
     totalPrice : localStorage.getItem("totalPrice")? JSON.parse(localStorage.getItem("totalPrice")): 0,
+ 
 }
 
 const cartSlice = createSlice({
@@ -110,7 +111,7 @@ const cartSlice = createSlice({
 });
 
 export default cartSlice.reducer;
-export const {openCart, closeCart, addItem, removeItem, clearItems, totalQuantity, getTotals,increaseQTY,decreaseQTY} = cartSlice.actions;
+export const {openCart, closeCart, addItem, removeItem, clearItems, totalQuantity, getTotals,increaseQTY,decreaseQTY, searchProduct} = cartSlice.actions;
 export const selectCartState = (state)=>state.cart.open;
 export const selectSelectedItems = (state)=>state.cart.selectedItems;
 export const selectTotalQuantity = (state)=>state.cart.totalQTY;

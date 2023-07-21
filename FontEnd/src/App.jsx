@@ -9,6 +9,7 @@ import Cart from "./cart/Cart";
 import { Toaster } from "react-hot-toast";
 import { selectCartState } from "./Features/cartSlice";
 import { useSelector } from "react-redux";
+import { DisplaySearchedProduct } from "./components/DisplaySearchedProduct";
 
 function App() {
   const [showMenu, setMenu] = useState(false);
@@ -42,7 +43,7 @@ function App() {
          )
       }
      
-
+      <DisplaySearchedProduct/>
       <div className="">
       <Header showMenu={showMenu}/>
       <Routes>

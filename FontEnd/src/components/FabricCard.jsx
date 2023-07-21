@@ -36,7 +36,7 @@ const FabricCard = ({ isshowCase, value: { id, title,price, rating, img, product
             >
               Buy
             </button>
-            <button className="bg-white px-2 py-1 rounded-md active:scale-[95%]">
+            <button className="bg-white px-2 py-1 rounded-md active:scale-[95%]" onClick={()=>{dispatch(openCart())}}>
               <GiShoppingBag className="" />
             </button>
           </div>

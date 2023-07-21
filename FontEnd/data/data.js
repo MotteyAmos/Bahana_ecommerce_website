@@ -496,14 +496,6 @@ export const allBags = {
   title: "bag",
   items:[
     {
-      id: "0m0b1",
-      title: "bag",
-      rating: "",
-      price: "140",
-      img: ladies_bag_1,
-      product_url:"/all_bags",
-    },
-    {
       id: "0m0b2",
       title: "bag",
       price: "160",
@@ -1041,14 +1033,17 @@ export const footerAPI = {
       {link: "Promotions"},
       {link: "Find A Store"},
       {link: "Signup"},
-      {link: "Nike Jouneral"},
+      {link: "Fabric Jouneral"},
+      {link: "Cuff link Jouneral"},
+      {link: "Bag Jouneral"},
       {link: "Send Us Feeback"},
+      
     ],
   ]
 };
 
 
-
+export const allProducts = [...allBags.items,...allCuff_link.items, ...allFabric.items];
 
 
 

@@ -12,7 +12,7 @@ const Cart = () => {
   const cartState = useSelector(selectCartState);
   const ifItemsSelected = useSelector(selectSelectedItems);
   const totalPrice = useSelector(selectTotalPrice);
-  console.log(cartState)
+
   return (
     <div
       className={

@@ -4,7 +4,7 @@ import Title from "./Title"
 const TopSales = ({value:{title,items}}) => {
   return (
     <>
-    <div className=" container mx-auto px-[15rem]  flex-wrap mt-[10rem] ">
+    <div className=" container mx-auto px-[15rem]  flex-wrap  ">
         <Title title={title}/>
         <div className="justify-between grid grid-cols-3 gap-5">
         {

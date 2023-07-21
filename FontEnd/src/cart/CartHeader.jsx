@@ -1,6 +1,6 @@
 import { ChevronDoubleLeftIcon, TrashIcon } from "@heroicons/react/24/solid";
 import { useDispatch } from "react-redux";
-import { closeCart, clearItems } from "../Features/cartSlice";
+import { closeCart, clearItems,getTotals } from "../Features/cartSlice";
 
 const CartHeader = ({totalPrice}) => {
   const dispatch = useDispatch();
@@ -19,7 +19,7 @@ const CartHeader = ({totalPrice}) => {
         </div>
       </div>
       <div>
-        <button type="button" onClick={()=>dispatch(clearItems())}>
+        <button type="button" onClick={()=>{dispatch(clearItems()),dispatch(getTotals())}}>
           <TrashIcon className="w-7 cursor-pointer active:scale-110 transition-all ease-in-out duration-200 " />
         </button>
       </div>

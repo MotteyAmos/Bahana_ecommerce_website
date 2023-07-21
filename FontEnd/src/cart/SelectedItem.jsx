@@ -43,7 +43,7 @@ const SelectedItem = ({
 
       <div className="flex gap-[5rem]">
         <div className="max-md:hidden">${price}</div>
-        <button type="button" onClick={()=>dispatch(removeItem({id}))}>
+        <button type="button" onClick={()=>dispatch(removeItem({id}), dispatch(getTotals()))}>
           <TrashIcon className="w-7" />
         </button>
       </div>
